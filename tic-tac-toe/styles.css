@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(132, 0, 255);
+    color: white;
+    height: 10rem;
+    
+}
+
+h1 {
+    margin: 0;
+    padding-top: 2rem;
+}
