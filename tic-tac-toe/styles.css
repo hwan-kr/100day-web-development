@@ -1,3 +1,10 @@
+:root {
+    --color-purple-light: #f7f0fc;
+    --color-purple-medium: #eee0f8;
+    --color-purple-dark: #7321ed;
+    --color-purple-dark2: #2e0e5e;
+}
+
 body {
     font-family: sans-serif;
     text-align: center;
@@ -6,13 +13,83 @@ body {
 }
 
 header {
-    background-color: rgb(132, 0, 255);
+    background-color: var(--color-purple-dark);
     color: white;
     height: 10rem;
-    
 }
 
 h1 {
     margin: 0;
     padding-top: 2rem;
+}
+
+/* player cards collection */
+#player-info {
+    display: flex;
+    justify-content: center;
+}
+
+/* Each player boxes */
+.player-box {
+    background-color: var(--color-purple-medium);
+    margin: 5rem 1rem 1rem 1rem;
+    width: 22rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Start of player info elements styling */
+.player-box h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+#first-player-name,
+#second-player-name {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: -0.8rem;
+    color: #5e1bc2;
+}
+
+#x-element,
+#o-element {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: -1rem;
+}
+
+.edit-button {
+    background-color: var(--color-purple-medium);
+    color: var(--color-purple-dark);
+    width: 5rem;
+    border: none;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.edit-button:hover {
+    background-color: #d5c3db;
+    border-radius: 6px;
+}
+/* End of player info elements styling */
+
+#start-game {
+    background-color: var(--color-purple-dark);
+    color: var(--color-purple-light);
+    border: none;
+    border-radius: 6px;
+    width: 10rem;
+    height: 2rem;
 }
