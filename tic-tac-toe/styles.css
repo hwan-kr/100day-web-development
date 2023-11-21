@@ -93,3 +93,28 @@ h1 {
     width: 10rem;
     height: 2rem;
 }
+
+#start-game:hover {
+    background-color: #5e1bc2;
+}
+
+/* game board styling*/
+#game-board {
+    display: none;
+}
+
+#boards {
+    width: 18rem;
+    height: 18rem;
+    display: grid;
+    margin: 0 auto 2rem auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-gap: 0.5rem;
+}
+
+.board {
+    background-color: #d1b6da;
+}
