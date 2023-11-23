@@ -67,7 +67,7 @@ h1 {
     margin-top: -1rem;
 }
 
-.edit-button {
+.player-box button {
     background-color: var(--color-purple-medium);
     color: var(--color-purple-dark);
     width: 5rem;
@@ -79,7 +79,7 @@ h1 {
     padding: 0.5rem 0.8rem;
 }
 
-.edit-button:hover {
+.player-box button:hover {
     background-color: #d5c3db;
     border-radius: 6px;
 }
