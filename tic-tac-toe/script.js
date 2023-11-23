@@ -33,7 +33,20 @@ function closePopupWindow() {
     popupWindow.style.display = 'none';
     popupBackground.style.display = 'none';
 }
+cancelButton.addEventListener('click', closePopupWindow);
 
 // Confirm button
-const nameEditInput = 
-cancelButton.addEventListener('click', closePopupWindow);
+const nameEditInput = document.getElementById('player-name');
+const firstPlayerName = document.getElementById('first-player-name');
+const secondPlayerName = document.getElementById('second-player-name');
+const formElement = document.querySelector('#name-edit-popup label');
+
+function changePlayerName() {
+    if (nameEditInput.value === '') {
+        nameEditInput.style.backgroundColor = 'red';
+        nameEditInput.previousElementSibling.style.color = 'red';
+    } else {
+        firstPlayerName.textContent = nameEditInput.value;
+    }
+}
+confirmButton.addEventListener('submit', changePlayerName);
