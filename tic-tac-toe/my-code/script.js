@@ -49,4 +49,5 @@ function changePlayerName() {
         firstPlayerName.textContent = nameEditInput.value;
     }
 }
+
 confirmButton.addEventListener('submit', changePlayerName);
