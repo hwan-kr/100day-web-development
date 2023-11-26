@@ -52,9 +52,10 @@ body h1 {
     background-color: #eee0fd;
     border: transparent;
     border-radius: 4px;
-    color: #895eba;
+    color: #974bed;
     margin-bottom: 1rem;
     font-weight: bold;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
 }
 
@@ -77,6 +78,8 @@ body h1 {
     padding: 0.5rem 0.8rem;
     border: transparent;
     border-radius: 4px;
+    width: 10rem;
+    height: 2rem;
 }
 
 #game-start-btn:hover {

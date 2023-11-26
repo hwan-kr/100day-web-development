@@ -6,13 +6,14 @@
         <title>Tiac-Tac-Toe</title>
         <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="stylesheet" href="./styles/popup.css" />
+        <script src="./scripts/popup.js" defer></script>
         <script src="./scripts/app.js" defer></script>
     </head>
     <body>
         <div id="overlay"></div>
 
         <aside>
-            <form id="popup">
+            <div id="popup">
                 <h1>Choose your name</h1>
                 <div>
                     <label for="player-name" id="input-label"
@@ -29,7 +30,7 @@
                     <button id="cancel-btn">Cancel</button>
                     <button type="submit" id="confirm-btn">Confirm</button>
                 </div>
-            </form>
+            </div>
         </aside>
         <header id="main-header">
             <h1>Play Tic, Tac, Toe</h1>
@@ -41,13 +42,13 @@
             <section id="player-boxes">
                 <section id="first-player-box">
                     <h2>Player 1</h2>
-                    <h3>PLAYER NAME</h3>
+                    <h3 id="first-player-name">PLAYER NAME</h3>
                     <p>X</p>
                     <button id="first-player-name-edit-btn">Edit</button>
                 </section>
                 <section id="second-player-box">
                     <h2>Player 2</h2>
-                    <h3>PLAYER NAME</h3>
+                    <h3 id="second-player-name">PLAYER NAME</h3>
                     <p>O</p>
                     <button id="second-player-name-edit-btn">Edit</button>
                 </section>
