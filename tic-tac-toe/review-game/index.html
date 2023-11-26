@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiac-Tac-Toe</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/popup.css">
-    <script src="./scripts/app.js" defer></script>
-</head>
-<body>
-    <aside id="popup">
-        <form>
-            <div id="overlay"></div>
-            <h1>Choose your name</h1>
-            <div>
-                <label for="player-name" id="input-label">Player name</label>
-                <input type="text" id="player-name" name="player-name" required>
-            </div>
-            <div>
-                <button>Cancel</button>
-                <button type="submit">Confirm</button>
-            </div>
-        </form>
-    </aside>
-    <header id="main-header">
-        <h1>Play Tic, Tac, Toe</h1>
-        <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
-    </header>
-    <main>
-        <section id="player-boxes">
-            <section id="first-player-box">
-                <h2>Player 1</h2>
-                <h3>PLAYER NAME</h3>
-                <p>X</p>
-                <button id="first-player-name-edit-btn">Edit</button>
-            </section>
-            <section id="second-player-box">
-                <h2>Player 2</h2>
-                <h3>PLAYER NAME</h3>
-                <p>O</p>
-                <button id="second-player-name-edit-btn">Edit</button>
-            </section>
-        </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tiac-Tac-Toe</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/popup.css" />
+        <script src="./scripts/app.js" defer></script>
+    </head>
+    <body>
+        <div id="overlay"></div>
 
-        <section>
-            <button  id="game-start-btn">Start New Game</button>
-        </section>
-    </main>
-</body>
+        <aside>
+            <form id="popup">
+                <h1>Choose your name</h1>
+                <div>
+                    <label for="player-name" id="input-label"
+                        >Player name</label
+                    >
+                    <input
+                        type="text"
+                        id="player-name"
+                        name="player-name"
+                        required
+                    />
+                </div>
+                <div>
+                    <button id="cancel-btn">Cancel</button>
+                    <button type="submit" id="confirm-btn">Confirm</button>
+                </div>
+            </form>
+        </aside>
+        <header id="main-header">
+            <h1>Play Tic, Tac, Toe</h1>
+            <p>
+                Built with HTML, CSS, JavaScript and - of course - lots of love!
+            </p>
+        </header>
+        <main>
+            <section id="player-boxes">
+                <section id="first-player-box">
+                    <h2>Player 1</h2>
+                    <h3>PLAYER NAME</h3>
+                    <p>X</p>
+                    <button id="first-player-name-edit-btn">Edit</button>
+                </section>
+                <section id="second-player-box">
+                    <h2>Player 2</h2>
+                    <h3>PLAYER NAME</h3>
+                    <p>O</p>
+                    <button id="second-player-name-edit-btn">Edit</button>
+                </section>
+            </section>
+
+            <section>
+                <button id="game-start-btn">Start New Game</button>
+            </section>
+        </main>
+    </body>
 </html>

@@ -6,5 +6,61 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* 50% 투명도 */
     z-index: 1;
-    display: none;
+    /* display: none; */
+}
+
+#popup {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 45%;
+    height: 10rem;
+    border-radius: 6px;
+    z-index: 3;
+    /* display: none; */
+}
+
+#popup h1 {
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#input-label {
+    display: block;
+    font-weight: bold;
+}
+
+#popup input {
+    margin: 0.5rem;
+    width: 45%;
+    height: 1.5rem;
+}
+
+#cancel-btn,
+#confirm-btn {
+    border: transparent;
+    width: 5rem;
+    height: 2rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#cancel-btn {
+    background-color: white;
+    color: #7724f8;
+}
+
+#cancel-btn:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+#confirm-btn {
+    background-color: #7724f8;
+    color: white;
+}
+
+#confirm-btn:hover {
+    background-color: #5b1cc2;
 }
