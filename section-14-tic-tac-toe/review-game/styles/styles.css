@@ -59,6 +59,13 @@ body h1 {
     padding: 0.5rem 1rem;
 }
 
+@media (max-width: 400px) {
+    #player-boxes button {
+        padding: 0;
+        margin: 0;
+    }
+}
+
 #player-boxes button:hover {
     background-color: #c5bad0;
 }

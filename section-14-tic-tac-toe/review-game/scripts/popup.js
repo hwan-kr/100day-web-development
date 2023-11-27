@@ -1,6 +1,7 @@
 function openPopup() {
     overlayElement.style.display = 'block';
     popupElement.style.display = 'block';
+    document.getElementById('player-name').value = '';
 }
 
 function playerCount(event) {
@@ -14,15 +15,19 @@ function playerCount(event) {
 }
 
 function nameEdit() {
-    if (playercount == '1') {
-        firstPlayerName.textContent = nameValue;
+    const nameValue = document.getElementById('player-name').value;
+    if (playercount === 1 && nameValue.trim()) {
+        firstPlayerName.textContent = nameValue.trim();
         overlayElement.style.display = 'none';
         popupElement.style.display = 'none';
         playercount = 0;
-    } else if (playercount == '2') {
-        secondPlayerName.textContent = nameValue;
+    } else if (playercount === 2 && nameValue.trim()) {
+        secondPlayerName.textContent = nameValue.trim();
         overlayElement.style.display = 'none';
         popupElement.style.display = 'none';
         playercount = 0;
+    } else if (!nameValue.trim()) {
+        document.getElementById('input-label').style.color = 'red';
+        alert('Please add name!');
     }
 }

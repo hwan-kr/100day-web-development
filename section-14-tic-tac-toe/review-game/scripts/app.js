@@ -23,8 +23,6 @@ players[0].name = firstPlayerName.textContent;
 const secondPlayerName = document.getElementById('second-player-name');
 players[1].name = secondPlayerName.textContent;
 
-const nameValue = document.getElementById('player-name').value;
-
 //popup
 const overlayElement = document.getElementById('overlay');
 const popupElement = document.getElementById('popup');
